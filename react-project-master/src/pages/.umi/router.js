@@ -9,28 +9,9 @@ const Router = routerRedux.ConnectedRouter;
 
 const routes = [
   {
-    path: '/',
-    component: require('../../layouts/index.js').default,
-    routes: [
-      {
-        path: '/',
-        exact: true,
-        component: require('../index.js').default,
-      },
-      {
-        path: '/login',
-        exact: true,
-        component: require('../login/index.js').default,
-      },
-      {
-        component: () =>
-          React.createElement(
-            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
-              .default,
-            { pagesPath: 'src/pages', hasRoutesInConfig: false },
-          ),
-      },
-    ],
+    path: '/searchInput/SearchInput',
+    exact: true,
+    component: require('../searchInput/SearchInput.js').default,
   },
   {
     component: () =>

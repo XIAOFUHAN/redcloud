@@ -1,0 +1,60 @@
+html {overflow-y:scroll;} 
+body {margin:0; padding:29px00; font:12px"\5B8B\4F53",sans-serif;background:#ffffff;} 
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;} 
+table,td,tr,th{font-size:12px;} 
+li{list-style-type:none;} 
+img{vertical-align:top;border:0;} 
+ol,ul {list-style:none;} 
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;} 
+address,cite,code,em,th {font-weight:normal; font-style:normal;}
+
+.so{
+    display: flex;
+    flex-direction:column;
+    height:100%;
+}
+.top{
+    display: flex;
+    width:100%;
+    height:1.2rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:0.2rem;
+    padding-left:0.2rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid #cecece;
+}
+
+.search{
+    width: 5rem;
+    height:0.8rem;
+    background-color:#DADADA;
+    border:1px solid #cecece;
+    border: radius 0.4rem;
+    -webkit-border-radius:0.4rem;
+    -moz-border-radius:0.4rem;
+    -ms-border-radius:0.4rem;
+    -o-border-radius:0.4rem;
+    outline: none;
+}
+.quxiao{
+    font-size:0.4rem;
+    height:0.8rem;
+    line-height:0.8rem;
+    color:rgb(110, 105, 105);
+}
+.his{
+    margin:0.3rem 0 0 0.2rem;
+   
+}
+.show{
+    width: 100%;
+    height:0.6rem;
+    line-height:0.6rem;
+    border-bottom: 1px solid #DADADA;
+}
+.pic{
+    margin-left: 0.4rem;
+    margin-right: 0.2rem;
+}

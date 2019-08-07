@@ -1,6 +1,6 @@
 import './polyfills';
 import history from './history';
-
+import '../../global.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import findRoute from 'C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/findRoute.js';
