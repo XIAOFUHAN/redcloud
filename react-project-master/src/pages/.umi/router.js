@@ -13,6 +13,11 @@ const routes = [
     component: require('../../layouts/index.js').default,
     routes: [
       {
+        path: '/Find',
+        exact: true,
+        component: require('../Find/index.js').default,
+      },
+      {
         path: '/',
         exact: true,
         component: require('../index.js').default,
@@ -25,7 +30,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('C:/Users/Administrator.PCOS-2019JKNJCI/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: false },
           ),
@@ -35,7 +40,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('C:/Users/Administrator.PCOS-2019JKNJCI/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: false },
       ),

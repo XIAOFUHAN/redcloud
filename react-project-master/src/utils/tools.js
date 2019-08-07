@@ -1,3 +1,4 @@
+
 /**
  * 设置token
  * @param {*} token
@@ -23,3 +24,4 @@ export function isLogined() {
     return false;
   }
 }
+
