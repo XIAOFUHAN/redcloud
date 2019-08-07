@@ -23,6 +23,16 @@ const routes = [
         component: require('../login/index.js').default,
       },
       {
+        path: '/login/phoneLogin',
+        exact: true,
+        component: require('../login/phoneLogin.js').default,
+      },
+      {
+        path: '/login/phoneReg',
+        exact: true,
+        component: require('../login/phoneReg.js').default,
+      },
+      {
         component: () =>
           React.createElement(
             require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')

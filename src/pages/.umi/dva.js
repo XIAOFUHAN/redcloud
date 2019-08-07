@@ -20,8 +20,8 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'movies', ...(require('G:/ZZ-H5/react-project/src/models/movies.js').default) });
-app.model({ namespace: 'user', ...(require('G:/ZZ-H5/react-project/src/models/user.js').default) });
+  app.model({ namespace: 'movies', ...(require('G:/redcloud1/src/models/movies.js').default) });
+app.model({ namespace: 'user', ...(require('G:/redcloud1/src/models/user.js').default) });
   return app;
 }
 
