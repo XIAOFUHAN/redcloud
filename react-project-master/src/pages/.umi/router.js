@@ -23,9 +23,14 @@ const routes = [
         component: require('../login/index.js').default,
       },
       {
+        path: '/playlist',
+        exact: true,
+        component: require('../playlist.js').default,
+      },
+      {
         component: () =>
           React.createElement(
-            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('C:/Users/33790/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: false },
           ),
@@ -35,7 +40,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('C:/Users/33790/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: false },
       ),

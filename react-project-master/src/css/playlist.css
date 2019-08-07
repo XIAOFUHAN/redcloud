@@ -1,0 +1,124 @@
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 头部导航栏 */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back {
+  font-size: 0.8rem;
+  color: #ccc;
+  padding: 0 0 0 0.1rem;
+}
+
+.songname {
+  font-size: 0.5rem;
+}
+
+.singer {
+  font-size: 0.3rem;
+  color: #ccc;
+}
+
+.share {
+  font-size: 0.8rem;
+  color: #ccc;
+  padding: 0 0.1rem 0 0;
+}
+
+/* 中间内容 */
+.section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes myfirst {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(360deg)
+  }
+
+}
+
+@-webkit-keyframes myfirst {
+
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(360deg)
+  }
+
+}
+
+.round {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: black;
+  border-radius: 50%;
+
+  animation-name: myfirst;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  /*SafariandChrome:;
+  */
+  -webkit-animation-name: myfirst;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-play-state: running;
+  animation-fill-mode: forwards;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* 底部导航栏 */
+.footer {}
+
+.Icontop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Icontop span {
+  font-size: 0.6rem;
+}
+
+.Iconbottom {
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Iconbottom .play {
+  font-size: 0.8rem;
+}
+
+.Iconbottom span {
+  display: flex;
+  align-items: center;
+}

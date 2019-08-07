@@ -1,9 +1,9 @@
 import './polyfills';
 import history from './history';
-
+import '../../global.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import findRoute from 'C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/findRoute.js';
+import findRoute from 'C:/Users/33790/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/findRoute.js';
 
 // runtime plugins
 const plugins = require('umi/_runtimePlugin');
@@ -134,6 +134,8 @@ if (!__IS_BROWSER) {
 
 export { ReactDOMServer };
 export default (__IS_BROWSER ? null : serverRender);
+
+require('../../global.css');
 
 // hot module replacement
 if (__IS_BROWSER && module.hot) {

@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// 头部导航栏
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back {
+  font-size: 0.8rem;
+  color: #ccc;
+  padding: 0 0 0 0.1rem;
+}
+
+
+.share {
+  font-size: 0.8rem;
+  color: #ccc;
+  padding: 0 0.1rem 0 0;
+}
+
+// 中间内容
+.section {
+  height: 100%;
+
+}
+
+.songname {
+  font-size: 0.5rem;
+}
+
+.singer {
+  font-size: 0.3rem;
+  color: #ccc;
+}
