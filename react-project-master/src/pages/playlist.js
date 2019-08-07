@@ -1,8 +1,24 @@
 import React from 'react'
 import { PageHeader, Icon } from 'antd';
 import Styles from "../css/playlist.css";
+import { getMusics } from "../services/music";
 
 function playlist() {
+    // console.log(props);
+
+    // const queryData = parse(props.location.search, {
+    //     ignoreQueryPrefix: true,  //忽略掉？前缀
+    // })
+    // const [music, getMusics] = useState([])
+    // const showDetail = id => {
+    //     getMovieDetail(id)
+    //         .then(res =>
+    //             //console.log(res),
+    //             setMovie(res.data.data.basic)
+    //         );
+    // };
+
+
     return (
         <div className={Styles.main}>
             {/* 头部导航栏 */}
@@ -26,7 +42,7 @@ function playlist() {
 
 
             </div>
-            <div className={Styles.footer}>
+            <div >
                 <div className={Styles.Icontop}>
                     <span><Icon type="heart" /></span>
                     <span><Icon type="download" /></span>
@@ -34,7 +50,14 @@ function playlist() {
                     <span><Icon type="more" /></span>
                 </div>
                 <div>
-                    <audio src="../test/蔡健雅 - 空白格.mp3" autoplay="autoplay" controls="controls"></audio >
+                    {/* <audio src="../test/蔡健雅 - 空白格.mp3" controls="controls"></audio > */}
+                    <div className={Styles.progress}>
+                        <span className={Styles.start}></span>
+                        <div className={Styles.progressbar}>
+                            <div className={Styles.now}></div>
+                        </div>
+                        <span className={Styles.end}></span>
+                    </div>
                 </div>
                 <div className={Styles.Iconbottom}>
                     <span><Icon type="sync" /></span>

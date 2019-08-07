@@ -13,6 +13,16 @@ const routes = [
     component: require('../../layouts/index.js').default,
     routes: [
       {
+        path: '/attention',
+        exact: true,
+        component: require('../attention.js').default,
+      },
+      {
+        path: '/fans',
+        exact: true,
+        component: require('../fans.js').default,
+      },
+      {
         path: '/',
         exact: true,
         component: require('../index.js').default,
@@ -26,6 +36,16 @@ const routes = [
         path: '/playlist',
         exact: true,
         component: require('../playlist.js').default,
+      },
+      {
+        path: '/rankinglist',
+        exact: true,
+        component: require('../rankinglist.js').default,
+      },
+      {
+        path: '/selfFM',
+        exact: true,
+        component: require('../selfFM.js').default,
       },
       {
         component: () =>

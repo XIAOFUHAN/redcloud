@@ -1,0 +1,70 @@
+/* 头部导航栏 */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back {
+  font-size: 0.6rem;
+  color: #ccc;
+  padding: 0.2rem 0 0 0.2rem;
+}
+
+.songname {
+  font-size: 0.5rem;
+}
+
+.singer {
+  font-size: 0.3rem;
+  color: #ccc;
+}
+
+.share {
+  font-size: 0.6rem;
+  color: #ccc;
+  padding: 0.2rem 0.2rem 0 0;
+}
+
+/* 关注页面的头部 */
+.action {
+  font-size: 0.6rem;
+  padding: 0.2rem 0 0 0;
+}
+
+/* 列表样式 */
+.demoinfinitecontainer {
+  border-bottom: 1px solid #e8e8e8;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 0.08rem 0.24rem;
+  height: 100%;
+  margin-bottom: 0.48rem;
+}
+
+.demoloadingcontainer {
+  position: absolute;
+  bottom: 0.4rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+/* 关注页面下面的导航栏 */
+.footer {
+  height: 1rem;
+  width: 100%;
+  background: yellow;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+}
+
+.footerico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
