@@ -23,6 +23,11 @@ const routes = [
         component: require('../login/index.js').default,
       },
       {
+        path: '/login/nickName',
+        exact: true,
+        component: require('../login/nickName.js').default,
+      },
+      {
         path: '/login/phoneLogin',
         exact: true,
         component: require('../login/phoneLogin.js').default,
@@ -31,6 +36,11 @@ const routes = [
         path: '/login/phoneReg',
         exact: true,
         component: require('../login/phoneReg.js').default,
+      },
+      {
+        path: '/login/phoneVerify',
+        exact: true,
+        component: require('../login/phoneVerify.js').default,
       },
       {
         component: () =>

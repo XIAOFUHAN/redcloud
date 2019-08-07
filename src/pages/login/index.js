@@ -1,6 +1,8 @@
-import React from 'react';
+import React , { useState } from 'react';
 import { Icon, Avatar, Button } from 'antd';
+import router from 'umi/router';
 function index() {
+  
   return (
     <div>
       {/*导航*/}
@@ -28,10 +30,23 @@ function index() {
       </div>
       {/*输入框 */}
       <div style={{ padding: '0 0.3rem', marginTop: '0.5rem' }}>
-        <Button type="primary" block={true}>
+        <Button
+          type="primary"
+          block={true}
+          onClick={() => {
+            router.push('/login/phonelogin');
+          }}
+        >
           手机号登录
         </Button>
-        <Button type="primary" block={true} style={{ margin: '0.3rem 0' }}>
+        <Button
+          type="primary"
+          block={true}
+          style={{ margin: '0.3rem 0' }}
+          onClick={() => {
+            router.push('/login/phonereg');
+          }}
+        >
           注册
         </Button>
       </div>
