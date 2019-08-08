@@ -12,7 +12,7 @@ import { post, get } from '../utils/request';
  */
 //export const reg = data => post('/api/v1/auth/reg', data);
 
-export const loadShopCart = () => get('/song/url?id=33894312');
+export const getRankingList = data => post('/top/list', data);
 
 
 

@@ -99,10 +99,13 @@ body {
 }
 
 .round {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 5rem;
+  height: 5rem;
   background-color: black;
   border-radius: 50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
   animation-name: myfirst;
   animation-duration: 5s;

@@ -1,6 +1,82 @@
+.html.body {
+  height: 100%;
+}
+
+.sectionmid {
+  margin: 1rem 0;
+  height: 100%;
+  overflow: auto;
+}
+
 .section {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
+}
+
+.midico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.midico p {
+  color: #fff;
+
+}
+
+.playtitle {
+  font-size: 0.4rem;
+  color: rgb(100, 100, 100);
+  margin: 0.1rem 0;
+  padding: 0 0.2rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.listli {
+  display: flex;
+
+}
+
+
+.songindex {
+  width: 0.8rem;
+  height: 0.8rem;
+
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.4rem;
+}
+
+.songitem {
+
+  display: flex;
+  padding: 0 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
+
+/* .itemleft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.itemtitle {
+  font-size: 0.35rem;
+}
+
+.artist {
+  color: #ccc;
+}
+
+.itemright {
+  font-size: 0.6rem;
+  color: #ccc;
 }

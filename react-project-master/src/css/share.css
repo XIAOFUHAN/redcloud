@@ -1,17 +1,23 @@
 /* 头部导航栏 */
 .header {
+  height: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
+  background-color: #D2413B;
 }
 
 .back {
   font-size: 0.6rem;
   color: #ccc;
-  padding: 0.2rem 0 0 0.2rem;
+  padding: 0.1rem 0 0 0.1rem;
 }
 
 .songname {
-  font-size: 0.5rem;
+  font-size: 0.4rem;
+
 }
 
 .singer {
@@ -22,12 +28,12 @@
 .share {
   font-size: 0.6rem;
   color: #ccc;
-  padding: 0.2rem 0.2rem 0 0;
+  padding: 0.1rem 0.1rem 0 0;
 }
 
 /* 关注页面的头部 */
 .action {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   padding: 0.2rem 0 0 0;
 }
 
