@@ -1,0 +1,111 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.5rem;
+  border-bottom: 0.01rem solid #ccc;
+  background-color: #fff;
+}
+
+.tag {
+  display: flex;
+
+}
+
+.nav span {
+  width: 0.5rem;
+  border: 1px solid #333;
+  text-align: center;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  color: #ccc;
+}
+
+.active {
+  background-color: #f00;
+}
+
+.active1 {
+  background-color: #fff;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.5rem;
+}
+
+.tags span {
+  width: 25%;
+  text-align: center;
+  height: 100%;
+  line-height: 0.5rem
+}
+
+.img {
+  height: 2rem;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+}
+
+.musicList {
+  padding: 0 0 0 0.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.musicList li {
+  height: 0.6rem;
+}
+
+.firstLi {
+  line-height: 0.6rem;
+}
+
+.musicLi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.musicCount {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.01rem solid #ccc;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 0.2rem 0 0;
+}
+
+.musicNum {
+  width: 0.15rem;
+  margin-right: 0.2rem;
+}
+
+.musicName {
+  height: 100%;
+}
+
+.musicName p {
+  height: 50%;
+  padding: 0.05rem 0;
+}
+
+.play {
+  margin-right: 0.15rem;
+}
+
+.playIcon {
+  line-height: 0.6rem;
+}
+
+.audio {
+  height: 0.2rem;
+  position: fixed;
+  bottom: 0.55rem;
+  width: 100%;
+}

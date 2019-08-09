@@ -1,35 +1,23 @@
-import React , { useState } from 'react';
+import React, { useState } from 'react';
 import { Icon, Avatar, Button } from 'antd';
 import router from 'umi/router';
+import zkh from './login.css';
 function index() {
-  
   return (
     <div>
       {/*导航*/}
-      <div
-        className="nav"
-        style={{
-          height: '0.5rem',
-          borderBottom: '1px solid #ccc',
-          position: 'relative',
-          textAlign: 'center',
-          lineHeight: '0.5rem'
-        }}
-      >
-        <span
-          onClick={() => history.back()}
-          style={{ position: 'absolute', marginLeft: '-30%' }}
-        >
+      <div className={zkh.nav}>
+        <span onClick={() => history.back()}>
           <Icon type="close" />
         </span>
-        <span style={{ fontWeight: '800', fontSize: '26px' }}>登录</span>
+        <h1>登录</h1>
       </div>
       {/*头像 */}
-      <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+      <div className={zkh.avatar}>
         <Avatar size={64} icon="user" shape={'circle'} />
       </div>
       {/*输入框 */}
-      <div style={{ padding: '0 0.3rem', marginTop: '0.5rem' }}>
+      <div className={zkh.inputBox}>
         <Button
           type="primary"
           block={true}
@@ -39,10 +27,11 @@ function index() {
         >
           手机号登录
         </Button>
+
         <Button
+          className={zkh.buttonReg}
           type="primary"
           block={true}
-          style={{ margin: '0.3rem 0' }}
           onClick={() => {
             router.push('/login/phonereg');
           }}
@@ -50,28 +39,26 @@ function index() {
           注册
         </Button>
       </div>
-      <div style={{ textAlign: 'center', margin: '0.1rem 0 0.8rem 0' }}>
-        其他方式登录
-      </div>
+      <div className={zkh.elseLogin}>其他方式登录</div>
 
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div className={zkh.elseLogins}>
+        <div className={zkh.loginElse}>
           <Avatar size={32} icon="user" shape={'circle'} />
           <span>qq</span>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className={zkh.loginElse}>
           <Avatar size={32} icon="user" shape={'circle'} />
           <span>qq</span>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className={zkh.loginElse}>
           <Avatar size={32} icon="user" shape={'circle'} />
           <span>qq</span>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className={zkh.loginElse}>
           <Avatar size={32} icon="user" shape={'circle'} />
           <span>qq</span>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className={zkh.loginElse}>
           <Avatar size={32} icon="user" shape={'circle'} />
           <span>qq</span>
         </div>

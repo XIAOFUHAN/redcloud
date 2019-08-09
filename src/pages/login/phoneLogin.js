@@ -3,6 +3,7 @@ import router from 'umi/router';
 import { Icon, Avatar, Button, Input, Tooltip } from 'antd';
 import { login } from '../../services/auth';
 import { setToken } from '../../utils/tools';
+import zkh from './login.css';
 function phoneLogin() {
   const [phone, setPhone] = useState('');
   const [pwd, setPwd] = useState('');
@@ -37,23 +38,11 @@ function phoneLogin() {
   return (
     <div>
       {/*导航*/}
-      <div
-        className="nav"
-        style={{
-          height: '0.5rem',
-          borderBottom: '1px solid #ccc',
-          position: 'relative',
-          textAlign: 'center',
-          lineHeight: '0.5rem'
-        }}
-      >
-        <span
-          onClick={() => history.back()}
-          style={{ position: 'absolute', marginLeft: '-25%' }}
-        >
+      <div className={zkh.nav}>
+        <span onClick={() => history.back()}>
           <Icon type="left" />
         </span>
-        <span style={{ fontWeight: '800', fontSize: '26px' }}>手机号登录</span>
+        <h1>手机号登录</h1>
       </div>
       {/* 输入框 */}
       <div style={{ padding: '0 0.3rem' }}>

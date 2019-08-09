@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0;
-  font: 12px"\5B8B\4F53", sans-serif;
   background: #ffffff;
 }
 
@@ -70,4 +69,23 @@ em,
 th {
   font-weight: normal;
   font-style: normal;
+}
+
+
+.activeColor {
+  background-color: #f00;
+}
+
+.activeColor1 {
+  background-color: #fff;
+}
+
+.activeBottom {
+  border-bottom: 0.02rem solid #ccc;
+  color: black
+}
+
+.activeBottom1 {
+  border-bottom: none;
+  color: #ccc
 }
