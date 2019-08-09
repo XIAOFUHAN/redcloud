@@ -15,7 +15,6 @@ export const sedVerify = data => get('/captcha/sent', data);
  * 验证手机是否已注册
  * @param {*} data
  */
-
 export const isPhoneReg = data => get('/cellphone/existence/check', data);
 //调用推荐新音乐接口
 export const newMusics = data => get('/top/song', data);
@@ -23,6 +22,8 @@ export const newMusics = data => get('/top/song', data);
 export const playMusic = data => get('/song/url', data);
 //音乐详情
 export const musicDetail = data => get('/song/detail', data);
+//每日推荐音乐
+export const dayMusicLists = data => get('/personalized/newsong', data);
 
 export const mvDetail = data => get('/video/url', data);
 /**

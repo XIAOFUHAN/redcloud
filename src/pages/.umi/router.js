@@ -43,19 +43,14 @@ const routes = [
         component: require('../login/phoneVerify.js').default,
       },
       {
+        path: '/music/dayMusic',
+        exact: true,
+        component: require('../music/dayMusic.js').default,
+      },
+      {
         path: '/music',
-        exact: false,
-        component: require('../music/_layout.js').default,
-        routes: [
-          {
-            component: () =>
-              React.createElement(
-                require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
-                  .default,
-                { pagesPath: 'src/pages', hasRoutesInConfig: false },
-              ),
-          },
-        ],
+        exact: true,
+        component: require('../music/index.js').default,
       },
       {
         component: () =>

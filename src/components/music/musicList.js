@@ -16,22 +16,34 @@ function musicList(props) {
   };
 
   const musicPlayAll = () => {
+    var musicId = [];
     let num = 0;
-    let musicId = [];
     for (let i = 0; i < musicList.length; i++) {
       musicId.push(musicList[i].id);
     }
 
     console.log(musicId);
-    //console.log(musicPlayTime);
-    musicDetail({
-      ids: musicId[num]
+    console.log(musicPlayTime);
+
+    // musicDetail({
+    //   ids: musicId[num]
+    // }).then(res => {
+    //   console.log(res.data.songs[0].dt);
+    //   setMusicPlayTime(res.data.songs[0].dt);
+    // });
+
+    // setTimeout(() => {
+    //   let num1 = 0;
+    //   num++;
+    //   num1++;
+
+    // }, musicPlayTime);
+    playMusic({
+      id: musicId[num]
     }).then(res => {
-      console.log(res.data.songs[0].dt);
-      setMusicPlayTime(res.data.songs[0].dt);
+      setMusicSrc(res.data.data[0].url);
     });
   };
-
   useEffect(
     () => {
       newMusics({ type: props.s }).then(res => {

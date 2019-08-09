@@ -5,7 +5,7 @@ import zkh from './music.css';
 import { newMusics, playMusic } from '../../services/auth';
 import MusicList from '../../components/music/musicList';
 
-function _layout(props) {
+function index(props) {
   const [color, setColor] = useState(true); //标签颜色
   const [menuNum, setMenuNum] = useState(1); //tag 标签默认第一个
   const [musicList, setMusicList] = useState([]); //音乐 列表
@@ -22,15 +22,6 @@ function _layout(props) {
     setMenuNum(num);
     setType(type);
   };
-  // const musicPlay = id => {
-  //   playMusic({
-  //     id: id
-  //   }).then(res => {
-  //     console.log(res.data.data);
-  //     setMusicSrc(res.data.data[0].url);
-  //     console.log(musicSrc);
-  //   });
-  // };
 
   return (
     <div>
@@ -93,4 +84,4 @@ function _layout(props) {
   );
 }
 
-export default _layout;
+export default index;
