@@ -18,11 +18,11 @@ function phoneVerify() {
       <div
         className="nav"
         style={{
-          height: '0.5rem',
+          height: '1.1rem',
           borderBottom: '1px solid #ccc',
           position: 'relative',
           textAlign: 'center',
-          lineHeight: '0.5rem'
+          lineHeight: '1.1rem'
         }}
       >
         <span
@@ -31,23 +31,25 @@ function phoneVerify() {
         >
           <Icon type="left" />
         </span>
-        <span style={{ fontWeight: '800', fontSize: '26px' }}>手机号验证</span>
+        <span style={{ fontWeight: '800', fontSize: '0.6rem' }}>
+          手机号验证
+        </span>
       </div>
-      <p style={{ paddingLeft: '0.1rem', color: '#ccc', marginTop: '0.2rem' }}>
+      <p style={{ paddingLeft: '0.2rem', color: '#ccc', marginTop: '0.5rem' }}>
         为了安全起见我们会向你的手机发送短信验证码
       </p>
       {/* 输入框 */}
-      <div style={{ padding: '0 0.3rem' }}>
+      <div style={{ padding: '0 0.6rem' }}>
         <Input
           placeholder="请输入验证码"
           prefix={<Icon type="monitor" style={{ color: 'rgba(0,0,0,.25)' }} />}
           onChange={e => setNum(e.target.value)}
-          style={{ margin: '0.2rem 0' }}
+          style={{ margin: '0.5rem 0' }}
         />
         <Button
           type="primary"
           block={true}
-          style={{ margin: '0.3rem 0' }}
+          style={{ margin: '0.6rem 0' }}
           onClick={() => nickName()}
         >
           下一步

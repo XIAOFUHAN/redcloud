@@ -16,7 +16,11 @@ function dayMusic(props) {
           <span style={{ border: 'none' }}>每日歌曲推荐</span>
         </div>
         <div>
-          <Icon type="question-circle" onClick={() => null} style={{margin:'0 0.2rem'}}/>
+          <Icon
+            type="question-circle"
+            onClick={() => null}
+            style={{ margin: '0 0.5rem' }}
+          />
           <Icon type="bar-chart" onClick={() => null} />
         </div>
       </div>

@@ -1,9 +1,9 @@
 .nav {
-  height: 0.5rem;
+  height: 1.1rem;
   border-bottom: 1px solid #ccc;
   position: relative;
   text-align: center;
-  line-height: 0.5rem;
+  line-height: 1.1rem;
 }
 
 .nav span {
@@ -13,26 +13,26 @@
 
 .nav h1 {
   font-weight: 800;
-  font-size: 0.26rem
+  font-size: 0.6rem
 }
 
 .avatar {
   text-align: center;
-  margin-top: 1rem
+  margin-top: 2.2rem
 }
 
 .inputBox {
-  padding: 0 0.3rem;
-  margin-top: 0.5rem;
+  padding: 0 0.7rem;
+  margin-top: 1.1rem;
 }
 
 .buttonReg {
-  margin: 0.3rem 0
+  margin: 0.6rem 0
 }
 
 .elseLogin {
   text-align: center;
-  margin: 0.1rem 0 0.8rem 0
+  margin: 0.2rem 0 2rem 0
 }
 
 .elseLogins {
@@ -43,23 +43,24 @@
 .loginElse {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .inputBox .inputPwd {
-  margin: 0.2rem 0;
+  margin: 0.5rem 0;
 }
 
 .elseLoginBig {
   text-align: center;
-  margin: 1rem 0 1.3rem 0;
+  margin: 2.2rem 0 2.8rem 0;
 }
 
 .nick {
   text-align: center;
-  margin: 0.3rem 0;
+  margin: 0.6rem 0;
   color: #ccc
 }
 
 .codeButton {
-  margin: 0.2rem 0
+  margin: 0.5rem 0
 }
