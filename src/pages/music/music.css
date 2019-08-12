@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 0.5rem;
-  border-bottom: 0.01rem solid #ccc;
+  height: 1.1rem;
+  border-bottom: 0.02rem solid #ccc;
   background-color: #fff;
 }
 
@@ -13,11 +13,11 @@
 }
 
 .nav span {
-  width: 0.5rem;
+  width: 1.1rem;
   border: 1px solid #333;
   text-align: center;
-  height: 0.25rem;
-  line-height: 0.25rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
   color: #ccc;
 }
 
@@ -33,18 +33,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 0.5rem;
+  height: 1.1rem;
 }
 
 .tags span {
   width: 25%;
   text-align: center;
   height: 100%;
-  line-height: 0.5rem
+  line-height: 1.1rem
 }
 
 .img {
-  height: 2rem;
+  height: 4.2rem;
 }
 
 .img img {
@@ -53,37 +53,39 @@
 }
 
 .musicList {
-  padding: 0 0 0 0.1rem;
-  margin-bottom: 0.8rem;
+  padding: 0 0 0 0.3rem;
+  margin-bottom: 1.9rem;
 }
 
 .musicList li {
-  height: 0.6rem;
+  height: 1.3rem;
 }
 
 .firstLi {
-  line-height: 0.6rem;
+  line-height: 1.3rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .musicLi {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  border-bottom: 1px solid #ccc;
 }
 
 .musicCount {
   flex: 1;
   display: flex;
   justify-content: space-between;
-  border-top: 0.01rem solid #ccc;
+  border-top: 0.0rem solid #ccc;
   height: 100%;
   overflow: hidden;
-  padding: 0 0.2rem 0 0;
+  padding: 0 0.5rem 0 0;
 }
 
 .musicNum {
-  width: 0.15rem;
-  margin-right: 0.2rem;
+  width: 0.4rem;
+  margin-right: 0.6rem;
 }
 
 .musicName {
@@ -92,20 +94,20 @@
 
 .musicName p {
   height: 50%;
-  padding: 0.05rem 0;
+  padding: 0.15rem 0;
 }
 
 .play {
-  margin-right: 0.15rem;
+  margin-right: 0.4rem;
 }
 
 .playIcon {
-  line-height: 0.6rem;
+  line-height: 1.3rem;
 }
 
 .audio {
-  height: 0.2rem;
+  height: 0.5rem;
   position: fixed;
-  bottom: 0.55rem;
+  bottom: 0.7rem;
   width: 100%;
 }

@@ -33,27 +33,6 @@ const routes = [
         component: require('../login/index.js').default,
       },
       {
-
-        path: '/MVdetail',
-        exact: true,
-        component: require('../MVdetail.js').default,
-      },
-      {
-        path: '/playlist',
-        exact: true,
-        component: require('../playlist.js').default,
-      },
-      {
-        path: '/rankinglist',
-        exact: true,
-        component: require('../rankinglist.js').default,
-      },
-      {
-        path: '/selfFM',
-        exact: true,
-        component: require('../selfFM.js').default,
-      },{
-
         path: '/login/nickName',
         exact: true,
         component: require('../login/nickName.js').default,
@@ -84,9 +63,29 @@ const routes = [
         component: require('../music/index.js').default,
       },
       {
+        path: '/MVdetail',
+        exact: true,
+        component: require('../MVdetail.js').default,
+      },
+      {
+        path: '/playlist',
+        exact: true,
+        component: require('../playlist.js').default,
+      },
+      {
+        path: '/rankinglist',
+        exact: true,
+        component: require('../rankinglist.js').default,
+      },
+      {
+        path: '/selfFM',
+        exact: true,
+        component: require('../selfFM.js').default,
+      },
+      {
         component: () =>
           React.createElement(
-            require('C:/Users/33790/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: false },
           ),
@@ -96,7 +95,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('C:/Users/33790/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/umi/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: false },
       ),

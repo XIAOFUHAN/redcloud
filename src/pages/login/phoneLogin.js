@@ -45,7 +45,7 @@ function phoneLogin() {
         <h1>手机号登录</h1>
       </div>
       {/* 输入框 */}
-      <div style={{ padding: '0 0.3rem' }}>
+      <div style={{ padding: '0 0.6rem' }}>
         <Input
           placeholder="请输入手机号"
           prefix={<Icon type="tablet" style={{ color: 'rgba(0,0,0,.25)' }} />}
@@ -55,7 +55,7 @@ function phoneLogin() {
             </Tooltip>
           }
           onChange={e => setPhone(e.target.value)}
-          style={{ margin: '0.3rem 0' }}
+          style={{ margin: '0.6rem 0' }}
         />
         <Input.Password
           placeholder="请输入密码"
@@ -70,7 +70,7 @@ function phoneLogin() {
         <Button
           type="primary"
           block={true}
-          style={{ margin: '0.3rem 0' }}
+          style={{ margin: '0.6rem 0' }}
           onClick={() => loginHandle()}
         >
           登陆

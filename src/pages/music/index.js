@@ -46,7 +46,7 @@ function index(props) {
         </div>
         <Icon type="bar-chart" onClick={() => null} />
       </div>
-      <div className={zkh.tags} style={{ marginTop: '0.5rem' }}>
+      <div className={zkh.tags} style={{ marginTop: '1.2rem' }}>
         <span
           className={menuNum === 1 ? 'activeBottom' : 'activeBottom1'}
           onClick={() => bottomChange(1, 0)}
