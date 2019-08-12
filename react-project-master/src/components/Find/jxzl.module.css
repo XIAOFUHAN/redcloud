@@ -1,0 +1,46 @@
+.jxbox{
+    width:96%;
+    
+    /* background:red; */
+}
+.sli{
+    height: 2rem;
+}
+.simg{
+    float:right;
+    width:1.8rem;
+    height: 1.8rem;
+    display: block;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+.txtbox{
+    margin-top:0.1rem;
+    float: left;
+    width:5rem;
+    /* background: green; */
+    line-height: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.txtspan{
+    text-align: center;
+    display: inline-block;
+    width:0.8rem;
+    line-height: 0.35rem;
+    color:grey;
+    font-size: 0.12rem;
+    border:1px solid #ccc;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+.txtp{
+    color:gray;
+}
