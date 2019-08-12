@@ -1,0 +1,36 @@
+.top{
+    position: fixed;
+    width: 100%;
+    height: 1rem;
+    top:0   ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.24rem;
+    border-bottom: 2px solid #948f8f;
+    background:#ccc;
+}
+.ico{
+    font-size: 0.4rem;
+    margin-left:0.2rem;
+    margin-right: 0.2rem;
+}
+.lie{
+    padding-top: 1.1rem;
+    background: #dedede;
+    padding-right: 0.1rem;
+}
+.sin{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height:1rem;
+    font-size: 0.3rem;
+    padding-left:0.2rem;
+    line-height: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #cecece;
+}
+.space{
+    margin:0.25rem 0;
+}

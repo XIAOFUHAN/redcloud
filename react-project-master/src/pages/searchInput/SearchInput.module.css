@@ -11,24 +11,23 @@ address,cite,code,em,th {font-weight:normal; font-style:normal;}
 .so{
     display: flex;
     flex-direction:column;
+    position: relative;
     height:100%;
 }
+
 .top{
-    display: flex;
-    width:100%;
     height:1.2rem;
-    justify-content: space-around;
-    align-items: center;
-    margin-top:0.2rem;
+    width: 100%;
+    position: fixed;
+    top: 0.2rem;
     padding-left:0.2rem;
-    padding-right: 0.3rem;
     padding-bottom: 0.1rem;
     border-bottom: 2px solid #cecece;
 }
-
 .search{
     width: 5rem;
     height:0.8rem;
+    font-size:0.24rem;
     background-color:#DADADA;
     border:1px solid #cecece;
     border: radius 0.4rem;
@@ -41,20 +40,92 @@ address,cite,code,em,th {font-weight:normal; font-style:normal;}
 .quxiao{
     font-size:0.4rem;
     height:0.8rem;
+    margin-left: 0.3rem;
     line-height:0.8rem;
     color:rgb(110, 105, 105);
 }
+
+
 .his{
-    margin:0.3rem 0 0 0.2rem;
-   
+    margin-top:0.5rem;
+    width: 100%;
+    position: absolute;
+    top:40px;
+    z-index: 999;
+    background:rgb(189, 189, 174);
 }
 .show{
     width: 100%;
     height:0.6rem;
     line-height:0.6rem;
     border-bottom: 1px solid #DADADA;
+    overflow: hidden;
 }
 .pic{
-    margin-left: 0.4rem;
+    margin-left: 0.1rem;
     margin-right: 0.2rem;
+} 
+
+
+
+
+.section{
+    margin-top:1.4rem;
+    font-size: 0.3rem;
+    overflow: auto;
+    flex:1;
 }
+.singer{
+    text-align: center;
+    height:0.7rem;
+    line-height:0.7rem;
+    border-bottom: 2px solid #f0eaea;
+}
+.hotsearch{
+   margin-left: 0.2rem;
+}
+.hots{
+   margin-top:0.2rem; 
+   padding-right:0.2rem;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.list{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background: #dedede;
+    margin:0.1rem;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 1rem;
+    width: 100%;
+    background: yellow;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+}
+.footerico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+
+
+
+
