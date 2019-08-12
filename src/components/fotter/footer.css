@@ -1,0 +1,21 @@
+/* 底部 */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  border-top: 2px solid #ccc;
+  position: fixed;
+  background-color: #fff;
+}
+
+.footerico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 0.16rem
+}

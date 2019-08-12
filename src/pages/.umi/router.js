@@ -33,6 +33,7 @@ const routes = [
         component: require('../login/index.js').default,
       },
       {
+
         path: '/MVdetail',
         exact: true,
         component: require('../MVdetail.js').default,
@@ -51,6 +52,36 @@ const routes = [
         path: '/selfFM',
         exact: true,
         component: require('../selfFM.js').default,
+      },{
+
+        path: '/login/nickName',
+        exact: true,
+        component: require('../login/nickName.js').default,
+      },
+      {
+        path: '/login/phoneLogin',
+        exact: true,
+        component: require('../login/phoneLogin.js').default,
+      },
+      {
+        path: '/login/phoneReg',
+        exact: true,
+        component: require('../login/phoneReg.js').default,
+      },
+      {
+        path: '/login/phoneVerify',
+        exact: true,
+        component: require('../login/phoneVerify.js').default,
+      },
+      {
+        path: '/music/dayMusic',
+        exact: true,
+        component: require('../music/dayMusic.js').default,
+      },
+      {
+        path: '/music',
+        exact: true,
+        component: require('../music/index.js').default,
       },
       {
         component: () =>
