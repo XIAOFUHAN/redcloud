@@ -22,8 +22,17 @@ body {
   padding: 0.2rem 0 0 0.2rem;
 }
 
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.15rem;
+
+}
+
 .songname {
-  font-size: 0.5rem;
+  font-size: 0.4rem;
 }
 
 .singer {
@@ -103,9 +112,9 @@ body {
   height: 5rem;
   background-color: black;
   border-radius: 50%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   animation-name: myfirst;
   animation-duration: 5s;

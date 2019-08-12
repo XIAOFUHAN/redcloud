@@ -1,0 +1,49 @@
+.listli {
+  display: flex;
+
+}
+
+
+.songindex {
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.songitem {
+
+  display: flex;
+  padding: 0 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
+
+/* .itemleft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.itemtitle {
+  font-size: 0.35rem;
+  padding-bottom: 0.15rem;
+}
+
+.artist {
+  color: #ccc;
+}
+
+.itemright {
+  font-size: 0.6rem;
+  color: #ccc;
+}
+
+.MVfooter{
+  height:0.8rem;
+  width:100%;
+  background-color:#ccc;
+  text-align:center;
+  position:fixed;
+  bottom:0;
+}

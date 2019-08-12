@@ -33,6 +33,11 @@ const routes = [
         component: require('../login/index.js').default,
       },
       {
+        path: '/MVdetail',
+        exact: true,
+        component: require('../MVdetail.js').default,
+      },
+      {
         path: '/playlist',
         exact: true,
         component: require('../playlist.js').default,

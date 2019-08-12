@@ -3,7 +3,7 @@ import { parse } from 'qs'
 import { PageHeader, Icon } from 'antd';
 import Styles from "../css/playlist.css";
 import { get } from "../utils/request"
-
+import Playsonglist from "../components/playsonglist/playsonglist"
 
 function playlist(props) {
   // console.log(props);
@@ -13,28 +13,34 @@ function playlist(props) {
   })
   //console.log(queryData)
   const id = queryData.id;
-  const [music, setMusic] = useState([])
-  const [musicDetail,setMusicDetail] = useState([])
+  const [music, setMusic] = useState([]);
+  const [musicName, setMusicName] = useState([]);
+  const [musicDetail, setMusicDetail] = useState([]);
   // const showDetail = id => {
-  useEffect(() => {
-    get("/song/detail", { ids: id }).then(res =>{
 
-      console.log(res.data.songs[0])
-      
-       setMusic(res.data.songs[0])
-      }
-      
-      );
-  }, []);
+
+
+
   useEffect(() => {
-    get("/song/url", { id: id })
-      .then(res =>
-        console.log(res.data),
-       //setMusic(res.data.songs[0].al)
-      )
+    get("/song/detail", { ids: id }).then(res => {
+      setMusicName(res.data.songs[0].ar[0])
+      setMusic(res.data.songs[0])
+    }
+
+    );
   }, []);
 
-console.log(music.al)
+
+
+  console.log(music);
+  // useEffect(() => {
+  //   get("/song/url", { id: id })
+  //     .then(res =>
+  //       console.log(res.data),
+  //       //setMusic(res.data.songs[0].al)
+  //     )
+  // }, []);
+
 
 
   return (
@@ -44,8 +50,16 @@ console.log(music.al)
         {/* <PageHeader onBack={() => null} title="Title" subTitle="This is a subtitle" /> */}
         <span className={Styles.back}><Icon type="left" /></span>
         <span className={Styles.name}>
-          <span className={Styles.songname}>安静</span><br />
-          <span className={Styles.singer}>周杰伦</span>
+          <span className={Styles.songname}>{music.name}</span><br />
+          <span className={Styles.singer}>{musicName.name}</span>
+          {/* {
+            music.map(song => {
+              return (
+                <span className={Styles.singer}>{song.name}</span>
+              )
+            })
+
+          } */}
         </span>
         <span className={Styles.share}><Icon type="share-alt" /></span>
       </div>
@@ -54,7 +68,7 @@ console.log(music.al)
       {/* 中间内容部分 */}
       <div className={Styles.section}>
         <div className={Styles.round}>
-          <img src='' style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} />
+          <img src="" style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} />
         </div>
 
 
@@ -82,8 +96,11 @@ console.log(music.al)
           <span><Icon type="step-backward" /></span>
           <span className={Styles.play}><Icon type="play-circle" /></span>
           <span><Icon type="step-forward" /></span>
-          <span><Icon type="unordered-list" /></span>
+          <span onClick={() => { this.setState({ show: true }) }} > <Icon type="unordered-list" /></span>
         </div>
+        {/* 播放的歌曲列表 */}
+
+        {/* <Playsonglist className={this.state.show ? 'show more' : 'more'} /> */}
 
 
       </div>

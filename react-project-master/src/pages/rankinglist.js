@@ -1,5 +1,7 @@
 import React, { Component, } from 'react'
 import Footer from '../components/Footer'
+import MusicList from '../components/musicList'
+import Playsonglist from '../components/playsonglist/playsonglist'
 import Styles from "../css/share.css";
 import Style from "../css/rankinglist.css";
 import { get } from "../utils/request"
@@ -8,27 +10,26 @@ import { get } from "../utils/request"
 import { PageHeader, Icon, IconFont, List, Avatar, Button } from 'antd';
 
 const headericonstyle = { color: "#D2413B", fontSize: "0.5rem", margin: "0 0.1rem" }
-
 export default class rankinglist extends Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
-      songList: []
-    }
+      showMore: false,
+    };
   }
-  componentWillMount() {
-    get('/top/list', { idx: 1 }).then(res => {
-      //const songList = res.data.playlist.tracks;
-      this.setState({ songList: res.data.playlist.tracks })
-      console.log(this.state.songList)
-    })
-  }
-  playSong(id) {
-    this.props.history.push({ pathname: '/playlist', query: { id: id } })
-  }
+
+  handleClick() {
+    this.setState({showMore : !this.state.showMore})
+   
+}
 
 
   render() {
+    console.log( this.state.showMore)
+   
+
+
     return (
       <div className={Style.ranking}>
 
@@ -37,9 +38,13 @@ export default class rankinglist extends Component {
           {/* <PageHeader onBack={() => null} title="Title" subTitle="This is a subtitle" /> */}
           <span className={Styles.back}><Icon type="left" /></span>
           <span className={Styles.action}>排行榜</span>
-          <span className={Styles.share}><Icon type="appstore" /></span>
+          <span onClick={() => this.handleClick()} className={Styles.share}><Icon type="appstore" /></span>
         </div>
         {/* 头部导航栏结束 */}
+
+
+
+
         {/* 中间内容部分 */}
         <div className={Style.sectionmid}>
           <div style={{ height: "4rem", backgroundColor: "#222", borderTop: "1px solid #000" }}>
@@ -73,30 +78,11 @@ export default class rankinglist extends Component {
             <Icon type="play-circle" />
             <div>播放全部</div>
           </div>
-
-
-          <ul>
-            {this.state.songList.map((item, index) => {
-              return (
-                <li className={Style.listli} key={index} onClick={this.playSong.bind(this, item.id)}>
-                  <div className={Style.songindex}>{index + 1}</div>
-                  <div className={Style.songitem} >
-                    <div className={Style.itemleft}>
-                      <div className={Style.itemtitle}>{item.name}</div>
-                      <div className={Style.artist}>{item.ar[0].name}</div>
-                    </div>
-                    <div className={Style.itemright}>
-                      <Icon type="ellipsis" />
-                    </div>
-                  </div>
-                </li>
-              )
-            })
-
-            }
-          </ul>
+          <MusicList />
         </div>
-
+        {
+          this.state.showMore ? <Playsonglist className={Style.showMore} /> : null
+        }
         <Footer />
 
       </div>

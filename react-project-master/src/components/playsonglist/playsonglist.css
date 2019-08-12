@@ -1,32 +1,17 @@
-.html.body
-#root{
+.html.body {
   height: 100%;
 }
 
-.sectionmid {
-  margin: 1rem 0;
-  height: 100%;
-  overflow: auto;
+.listheader {
+height: 100%;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.2;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
 }
 
-.section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-.midico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.midico p {
-  color: #fff;
-
-}
 
 .playtitle {
   font-size: 0.4rem;
@@ -35,6 +20,7 @@
   padding: 0 0.2rem;
   display: flex;
   align-items: center;
+  background-color:#fff
 
 }
 
