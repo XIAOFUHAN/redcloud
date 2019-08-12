@@ -1,0 +1,19 @@
+.lists{
+    padding:0 0.1rem;
+}
+.nm{
+    height:1rem;
+    padding-left:0.2rem;
+    line-height: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #cecece;
+    font-size: 0.4rem;
+    overflow: hidden;
+}
+.con{
+    font-size: 0.3rem;
+    margin-right: 0.2rem;
+}
+.tol{
+    margin-left: 0.2rem;
+}

@@ -1,0 +1,70 @@
+
+
+.top{
+    position: fixed;
+    width: 100%;
+    height: 1rem;
+    top:0   ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.24rem;
+    border-bottom: 2px solid #948f8f;
+    background:#ccc;
+}
+.ico{
+    font-size: 0.4rem;
+    margin-left:0.2rem;
+    margin-right: 0.2rem;
+}
+img{
+    margin-top:1rem;
+    width: 100%;
+    height:4.5rem;
+    background: #000;
+}
+
+
+
+
+.pu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid #cecece;
+    background: #fff;
+}
+.pro{
+    font-size:0.4rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding:0 0.2rem;
+
+}
+.sec{
+    width: 100%;
+}
+.active{
+    color:#D2413B!important;
+}
+
+
+
+
+
+
+.footer {
+    height: 1rem;
+    width: 100%;
+    background: yellow;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+}
+.footerico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
