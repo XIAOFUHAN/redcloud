@@ -1,0 +1,47 @@
+.excbox{
+    width:100%;
+    height: 3.4rem;
+    /* background: pink; */
+    justify-content: space-around;
+    padding:0.25rem ;
+    display: flex;
+}
+.simgbox{
+width:3.4rem;
+height: 3rem;
+/* background: red; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+.sigimg{
+    display:block;
+    width:3.4rem;
+    height: 2.2rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+.sigbigimg{
+    display:block;
+    width:92%;
+    height: 2.2rem;
+    margin:0 auto;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+
+.sigp{
+    
+    line-height: 0.28rem;
+    height: 0.56rem;
+    /* width:2.2rem; */
+    overflow: hidden;
+    padding:0.02rem;    
+}
