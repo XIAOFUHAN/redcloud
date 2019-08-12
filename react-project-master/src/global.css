@@ -39,10 +39,10 @@ th {
 li {
   list-style-type: none;
 }
-img {
+/* img {
   vertical-align: top;
   border: 0;
-}
+} */
 ol,
 ul {
   list-style: none;
@@ -64,10 +64,14 @@ th {
   font-weight: normal;
   font-style: normal;
 }
-/* img {
+img {
   vertical-align: middle;
-} 解决图片插入元素下方撑大三个像素的bug */
+} /*解决图片插入元素下方撑大三个像素的bug*/
 html,
 body {
   height: 100%;
+}
+
+.active {
+  color: #D2413B !important;
 }

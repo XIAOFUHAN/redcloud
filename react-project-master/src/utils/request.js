@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: 陈佳
+ * @Date: 2019-08-06 16:25:37
+ * @LastEditTime: 2019-08-12 11:19:54
+ * @LastEditors: 陈佳
+ */
 import axios from 'axios';
 // import Nprogress from 'nprogress';
 
@@ -10,7 +17,7 @@ const instance = axios.create({
 instance.interceptors.request.use(
   function(config) {
     // Do something before request is sent
-    console.log('发送网络请求之前执行');
+    // console.log('发送网络请求之前执行');
     // Nprogress.start();
     return config;
   },
@@ -23,7 +30,7 @@ instance.interceptors.request.use(
 // 全局响应拦截
 instance.interceptors.response.use(
   function(response) {
-    console.log('网络请求完成');
+    // console.log('网络请求完成');
     // setTimeout(function() {
     //   Nprogress.done();
     // }, 500000);
